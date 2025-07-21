@@ -15,7 +15,9 @@ python proxy.py
 
 nano ~/startproxy.sh
 
-#!/data/data/com.termux/files/usr/bin/bash cd ~/DUAL1DBT nohup python proxy.py > /dev/null 2>&1 &
+#!/data/data/com.termux/files/usr/bin/bash 
+cd ~/DUAL1DBT 
+nohup python proxy.py > /dev/null 2>&1 &
 
 chmod +x ~/startproxy.sh
 
