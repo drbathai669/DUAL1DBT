@@ -29,7 +29,7 @@ logging.basicConfig(
 )
 
 class OptimizedProxy:
-    def __init__(self, host='0.0.0.0', port=8888, max_workers=500, buffer_size=16384):
+    def __init__(self, host='0.0.0.0', port=32168, max_workers=500, buffer_size=16384):
         self.host = host
         self.port = port
         self.max_workers = max_workers
@@ -311,7 +311,7 @@ class OptimizedProxy:
 
 if __name__ == "__main__":
     PROXY_HOST = '0.0.0.0'
-    PROXY_PORT = 8888
+    PROXY_PORT = 32168
     MAX_WORKERS = 1000
     BUFFER_SIZE = 32768
 
@@ -328,3 +328,4 @@ if __name__ == "__main__":
         print("\nShutting down proxy server...")
         proxy.stop()
         sys.exit(0)
+
